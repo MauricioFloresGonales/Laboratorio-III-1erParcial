@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      button {
+        height: 30px;
+        width: 90px;
+      }
+      .abm {
+        border-color: black;
+        border-width: 6px;
+        border-style: groove;
+      }
+    </style>
+</head>
+<body>
+    <script src="index.js" type="module"></script>
+    <h1>Fomr de Datos</h1>
+    <label for="selectEntidades"> Filtrar Por: </label>
+    <select id="selectEntidades">
+        <option value="Todos">Todos</option>
+        <option value="Profesionales">Heroes</option>
+        <option value="Futbolistas">Villanos</option>
+    </select>
+    <br>
+    <label for="imputEdadPromedio"> Filtrar Edad Promedio: </label>
+    <input id="imputEdadPromedio" name="imputEdadPromedio" type="text"/>
+    <button id="botonCalcular">calcular</button>
+    <h3>Mostrar Columnas</h3>
+    <div id="container"></div>
+    <br>
+    <div id="dynamicTable"></div>
+    <br>
+    <div class="abm" id="abmComponent">
+      <h3>Formulario ABM</h3>
+    </div>
+</body>
+</html>
